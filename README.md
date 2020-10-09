@@ -20,15 +20,16 @@ function resetInputs() {
     heightObj.value = '';
     widthObj.value = '';
 	costObj.innerHTML = '';	
-            }
-            function calcWeight() {
-                var length = new Number(lengthObj.value);
-                var girth = new Number(girthObj.value);
-                weightObj.innerHTML = '';
-                if(isNaN(length) || isNaN(girth)) {
-                    alert('Invalid length or girth');
-                    return;
-                }
+           function calcCost()
+	   {
+    var length = new Number(lengthObj.value);
+    var height = new Number(heightObj.value);
+	var width = new Number(widthObj.value);
+    costObj.innerHTML = '';
+    if(isNaN(length) || isNaN(height) || isNaN(width)) {
+        alert('Invalid length or height or width');
+        return;
+    }
                 weightObj.innerHTML = length*Math.pow(girth,2)/800;
             }
         </script>
