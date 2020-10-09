@@ -8,13 +8,14 @@ Aquarium1
 	
         <title></title>
         <script type="text/javascript">
-            window.onload=function() {
-                lengthObj = document.getElementById('txtLength');
-                girthObj = document.getElementById('txtGirth');
-                weightObj = document.getElementById('tdWeight');
-                document.getElementById('btnReset').onclick = resetInputs;
-                document.getElementById('btnCalc').onclick = calcWeight;
-            }
+         window.onload=function() {
+    lengthObj = document.getElementById('txtLength');
+    heightObj = document.getElementById('txtHeight');
+    widthObj = document.getElementById('txtWidth');
+	costObj = document.getElementById('tdCost');
+    document.getElementById('btnReset').onclick = resetInputs;
+    document.getElementById('btnCalcCost').onclick = calcCost;
+}
             function resetInputs() {
                 lengthObj.value = '';
                 girthObj.value = '';
