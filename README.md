@@ -30,28 +30,10 @@ function resetInputs() {
         alert('Invalid length or height or width');
         return;
     }
-                weightObj.innerHTML = length*Math.pow(girth,2)/800;
-            }
-        </script>
-    </head>
-    <body>
-        <table>
-            <tr>
-                <td><label for="txtLength">Length (inches)</label></td>
-                <td><input type="text" id="txtLength" /></td>
-            </tr>
-            <tr>
-                <td><label for="txtGirth">Girth (inches)</label></td>
-                <td><input type="text" id="txtGirth" /></td>
-            </tr>
-            <tr>
-                <td>Weight</td>
-                <td id="tdWeight"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><button id="btnReset">Reset</button><button id="btnCalc">Calculate</button></td>
-            </tr>
-        </table>
-    </body>
-</html>
+        if (height >24.9){
+        costObj.innerHTML = "$" + (2*(length*height+width*height+length*width)*0.1+(height*4+length*2+width*2)*0.1+ 2*(length*height+width*height+length*width)*0.01)*1.1
+    } else {
+        costObj.innerHTML = "$" + (2*(length*height+width*height+length*width)*0.06+(height*4+length*2+width*2)*0.1+ 2*(length*height+width*height+length*width)*0.01)*1.1
+    }
+
+}
