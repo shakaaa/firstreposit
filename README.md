@@ -15,11 +15,11 @@ Aquarium1
 	costObj = document.getElementById('tdCost');
     document.getElementById('btnReset').onclick = resetInputs;
     document.getElementById('btnCalcCost').onclick = calcCost;
-}
-            function resetInputs() {
-                lengthObj.value = '';
-                girthObj.value = '';
-                weightObj.innerHTML = '';
+function resetInputs() {
+    lengthObj.value = '';
+    heightObj.value = '';
+    widthObj.value = '';
+	costObj.innerHTML = '';	
             }
             function calcWeight() {
                 var length = new Number(lengthObj.value);
